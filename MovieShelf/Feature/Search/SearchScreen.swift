@@ -21,7 +21,6 @@ struct SearchScreen: View {
             .setTitleTextAttributes([.foregroundColor: UIColor.white], for: .normal)
         UISegmentedControl.appearance()
             .setTitleTextAttributes([.foregroundColor: UIColor.white], for: .selected)
-
     }
 
     var body: some View {

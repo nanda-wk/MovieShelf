@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		53FF32EB2CA46ABB00173230 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 53FF32EA2CA46ABB00173230 /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		53FF327E2CA1B22100173230 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53FF32EB2CA46ABB00173230 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = MovieShelf;
 			packageProductDependencies = (
+				53FF32EA2CA46ABB00173230 /* Alamofire */,
 			);
 			productName = MovieShelf;
 			productReference = 53FF326D2CA1B22000173230 /* MovieShelf.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 53FF32642CA1B22000173230;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				53FF32E92CA46ABB00173230 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 53FF326E2CA1B22000173230 /* Products */;
 			projectDirPath = "";
@@ -398,6 +407,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MovieShelf/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -426,6 +436,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MovieShelf/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -552,6 +563,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		53FF32E92CA46ABB00173230 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		53FF32EA2CA46ABB00173230 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53FF32E92CA46ABB00173230 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 53FF32652CA1B22000173230 /* Project object */;
 }

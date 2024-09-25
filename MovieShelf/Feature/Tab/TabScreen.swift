@@ -16,12 +16,12 @@ struct TabScreen: View {
     }
 
     var body: some View {
-        TabView(selection: self.$selected) {
+        TabView(selection: $selected) {
             NavigationStack {
                 HomeScreen()
             }
             .tabItem {
-                self.CustomTabItem(tab: .home)
+                CustomTabItem(tab: .home)
             }
             .tag(TabItem.home)
 
@@ -29,7 +29,7 @@ struct TabScreen: View {
                 SearchScreen()
             }
             .tabItem {
-                self.CustomTabItem(tab: .search)
+                CustomTabItem(tab: .search)
             }
             .tag(TabItem.search)
 
@@ -37,7 +37,7 @@ struct TabScreen: View {
                 FavoritesScreen()
             }
             .tabItem {
-                self.CustomTabItem(tab: .favorites)
+                CustomTabItem(tab: .favorites)
             }
             .tag(TabItem.favorites)
         }
@@ -61,27 +61,27 @@ private enum TabItem: String, CaseIterable, Hashable, Identifiable {
     case search
     case favorites
 
-    var id: String { self.rawValue }
+    var id: String { rawValue }
 
     var title: String {
         switch self {
-            case .home:
-                return "Home"
-            case .search:
-                return "Search"
-            case .favorites:
-                return "Favorites"
+        case .home:
+            "Home"
+        case .search:
+            "Search"
+        case .favorites:
+            "Favorites"
         }
     }
 
     var icon: Image {
         switch self {
-            case .home:
-                return .init(systemName: "house")
-            case .search:
-                return .init(systemName: "magnifyingglass")
-            case .favorites:
-                return .init(systemName: "heart")
+        case .home:
+            .init(systemName: "house")
+        case .search:
+            .init(systemName: "magnifyingglass")
+        case .favorites:
+            .init(systemName: "heart")
         }
     }
 }
